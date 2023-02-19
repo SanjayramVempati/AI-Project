@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <h2>Sign In</h2>
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.username.label }}<br>
+                {{ form.username(style='height:40px; font-size:30px', size=16) }}<br>
+                {% for error in form.username.errors %}
+                <span style="color: red; font-size: 15px; font-weight: normal">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.password.label }}<br>
+                {{ form.password(style='height:40px; font-size:30px', size=16) }}<br>
+                {% for error in form.password.errors %}
+                <span style="color: red; font-size: 15px; font-weight: normal">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>{{ form.remember_me(style='height:25px;width:25px') }} {{ form.remember_me.label}}</p>
+            <p>{{form.submit(class_="submit__btn",style='color:white')}}</p>
+        </form>
+      </div>
+    </div>
+  </div>  
+{% endblock %}

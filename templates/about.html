@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h2>About Us</h2>
+          <p>Our Vision in Education</p>
+        </div>
+        <div class="main__img--container">
+          <img id="main__img" src="{{url_for('static',filename='images/learn.svg')}}" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="services">
+      <h1>Innovation in Education</h1>
+      <h2 class="left-aligned-text font-text big-text" style="margin: 25px; color: #110d3d;"><b>Who Are We?</b></h2>
+      <div class="semi-transparent-box" >
+        <h3 class="content-font"> Who is Inspire?<br> <br>Our team is dedicated towards helping students understand and learn Algebra 1 concepts. Our AI technology will aid students in achieving this goal by providing personalized feedback and guiding them through the learning process. By using our Quiz feature, the student will answer a set of questions and receive feedback on each one by our artifical intelligence technology. Once the session is over, we will format a report to the student and teacher with the questions, answers, and feedback <br> <br> Why are we doing this? <br> <br> We believe the educational system is flawed as in student needs are not adequately met. In exams, students are simply received a letter grade and are forced to move on rather than treating mistakes as learning opportunities. Our AI solution helps identify gaps in learning and addresses them through our innovative solution.</h3>
+        <br>
+      </div>
+      <br>
+      <br>
+      <br>
+      <h2 class="left-aligned-text font-text big-text" style="margin: 25px; color: #110d3d;"><b>Our Success</b></h2>
+      <div class="semi-transparent-box" >
+        <h3 class="content-font">(List our successes and future ambitions including performance statistics)</h3>
+        
+      </div>
+      <br>
+      <br>
+      <br>
+      <h2 class="left-aligned-text font-text big-text" style="margin: 25px; color: #110d3d;"><b>How It Works</b></h2>
+      <div class="semi-transparent-box" >
+        <h3 class="content-font">We will have the teacher upload a list of questions along with several possible correct solutions. Our software will administer the test and provide a report at the end of the exam with the question, student response, and AI generated feedback.</h3>
+      </div>
+      
+    </div>
+ 
+
+{% endblock %}

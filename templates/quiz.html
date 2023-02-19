@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <!-- Hero section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h2>The Test</h2>
+          <p>Take our famous test</p>
+          <!-- <button class="main__btn">
+            <a
+              href="https://apps.apple.com/us/app/netflix/id363590051"
+              target="_blank"
+              >Download the App</a
+            >
+          </button> -->
+        </div>
+        <div class="main__img--container">
+          <img id="main__img" src="{{url_for('static',filename='images/takingQuiz.svg')}}" />
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="services" class="services">
+      <h1>Our revolutionary app is intelligent and easy to use</h1>
+      <div class="services__container">
+        <div class="business__services__card">
+          <h2>Download Allergone</h2>
+          <p>Download the app today</p>
+          <a
+            href="https://apps.apple.com/us/app/netflix/id363590051"
+            target="_blank"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </div> -->
+
+{% endblock %}

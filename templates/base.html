@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Site created by Brian Design on youtube @ www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {% if title %}
+    <title>{{ title }} | Inspire</title>
+    {% else %}
+    <title>Inspire</title>
+    {% endif %}
+    <style>
+      .rounded-box {
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+    <style>
+      .left-aligned-text {
+        text-align: left;
+      }
+    </style>
+    <style>
+      .left-aligned-box {
+        float: left;
+        width: 50%;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet">
+    <style>
+      .font-text {
+        font-family: "Kumbh Sans", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+      }
+    </style>
+    <style>
+      .big-text {
+        font-size: 30px;
+        background: linear-gradient(to right, #4836d6, #2a3957);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+    <style>
+      .translucent-box {
+        background-color: rgba(245, 245, 245, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+      }
+    </style>
+    <style>
+      .semi-transparent-box {
+        background-color: rgba(92, 140, 171, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        width: 1100px;
+      }
+    </style>
+    <style>
+      /* Import Roboto font */
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+      
+      /* Use Roboto font for body text */
+      .content-font{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+      }
+    </style>
+    <style>
+    gradient-text{
+      background-image: linear-gradient(to right, blue, cyan);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    </style>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+      />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+      />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>inspire</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="{{url_for('quiz')}}" class="navbar__links">Quiz</a>
+          </li>
+          <!--           <li class="navbar__item">
+            <a href="{{url_for('learn')}}" class="navbar__links">Learn</a>
+          </li> -->
+          <li class="navbar__item">
+            <a href="{{url_for('about')}}" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="{{url_for('ourteam')}}" class="navbar__links">Team</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="{{url_for('login')}}" class="button">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <!-- Link to the actual content -->
+
+    {% block content %} {% endblock %}
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+            <a href="/">Careers</a> <a href="/">Investments</a>
+            <a href="/">Terms of Service</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Contact</a> <a href="/">Support</a>
+            <a href="/">Destinations</a> <a href="/">Sponsorships</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+            <a href="/">Agency</a> <a href="/">Influencer</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> <a href="/">Facebook</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo"><i class="fas fa-gem"></i>Inspire</a>
+          </div>
+          <p class="website__rights">
+            © Inspire Education 2023. All rights reserved.
+          </p>
+          <div class="social__icons">
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
+              target="_blank"
+              aria-label="Youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="{{url_for('static',filename='scripts/app.js')}}"></script>
+  </body>
+</html>

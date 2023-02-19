@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h2>Inspire</h2>
+          <!-- <h2>APPS</h2> -->
+          <p>Change the way you learn</p>
+          <button class="main__btn"><a href="#services">Get Started</a></button>
+        </div>
+        <div class="main__img--container">
+          <img id="main__img" src="{{url_for('static',filename='images/takingTest.svg')}}" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="services">
+      <!-- <h1>Jump to the future with Armaan's Apps</h1> -->
+      <div class="services__container">
+        <div class="services__card">
+          <h2>What do we do?</h2>
+          <p>Inspire is a software that adminsters a test created by the instructor. 
+            <br>Our AI solution will grade the student answers and format a report at the end of the exam.
+            <br>Our hope is to address gaps in student learning and dig deeper into a student's test grade.<br></p>
+          <br>
+          <img src="{{url_for('static',filename='images/takingQuiz.svg')}}" />
+        </div>
+        <div class="services__card">
+          <h2>How it all works</h2>
+          <p>Here is a simple demonstration (no technical stuff)...
+            <br>1. Teacher inputs an exam with possible correct answers for each question. 
+            <br>2. Our quiz page will administer the test and the student will complete all the questions.
+            <br>3. Our AI solution will grade the student responses with feedback
+            <br>4. Our software will create a report for the student and teacher after the exam</p>
+<!--           <a href="{{url_for('learn')}}">Get Started</a> -->
+          <img src="{{url_for('static',filename='images/learn.svg')}}" alt="" />
+        </div>
+        <!-- <div class="services__card">
+          <h2>Learn</h2>
+          <p>Prepare yourself to take our test</p>
+          <a href="/learn.html">Get Started</a>
+          <img src="/images/learn.svg" alt="" />
+        </div> -->
+      </div>
+    </div>
+
+{% endblock %}
